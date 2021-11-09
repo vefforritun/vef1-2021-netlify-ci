@@ -13,4 +13,10 @@ describe('main.js', () => {
 
     expect(result).toBe('cba');
   });
+
+  it('should return undefined for non-string', () => {
+    const result = reverse(null);
+
+    expect(result).toBe(undefined);
+  });
 });
