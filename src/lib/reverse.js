@@ -1,4 +1,8 @@
 
 export function reverse(str) {
-  return str.split('').reverse().join('');
+  const split = str.split('');
+
+  split.reverse();
+
+  return split.join('');
 }

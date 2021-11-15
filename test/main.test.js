@@ -2,15 +2,21 @@ import { describe, expect, it } from '@jest/globals';
 import { reverse } from '../src/lib/reverse.js';
 
 describe('main.js', () => {
-  it('should reverse a single char string', () => {
-    const result = reverse('a');
+  it('reverses a string', () => {
+    const input = 'foo';
 
-    expect(result).toBe('a');
+    const result = reverse(input);
+
+    expect(result).toBe('oof');
   });
 
-  it('should reverse a string of length > 1', () => {
-    const result = reverse('abc');
+  it('reverses a different string', () => {
+    const input = 'bar';
 
-    expect(result).toBe('cba');
+    const result = reverse(input);
+
+    expect(result).toBe('rab');
   });
+
 });
+
