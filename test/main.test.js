@@ -18,5 +18,13 @@ describe('main.js', () => {
     expect(result).toBe('rab');
   });
 
+  it('should return undefined for undefined', () => {
+    const input = undefined;
+
+    const result = reverse(input);
+
+    expect(result).toBe(undefined);
+  });
+
 });
 
